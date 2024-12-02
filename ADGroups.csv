@@ -1,0 +1,19 @@
+GroupName,OUName,ParentOU,Description,Scope,Type,MemberOf
+MGT_Global_Access_Grp,Management,,Global access to company resources with exceptions for IT security controls,Global,Security,
+MGT_Policy_Grp,Management,,Rights to approve and review policy changes,Global,Security,
+IT_Domain_Admins_Grp,IT,,Domain Administrator rights,Global,Security,
+IT_Server_Admins_Grp,IT,,Server Administrator rights and excluding Domain Controller access,Global,Security,
+IT_HelpDesk_L1_Grp,IT,,Basic user support and password resets,Global,Security,
+IT_HelpDesk_L2_Grp,IT,,Advanced support and local admin rights,Global,Security,
+HR_Sensitive_Data_Grp,HR,,Full access to employee confidential data,Global,Security,
+HR_General_Staff_Grp,HR,,Access to general HR documents and policies,Global,Security,
+Sales_Managers_Grp,Sales,,Full access to sales data and reports,Global,Security,
+Sales_Staff_Grp,Sales,,Access to basic sales tools and customer data,Global,Security,
+IT_All_Staff_Grp,IT,,,Global,Security,IT_Domain_Admins_Grp;IT_Server_Admins_Grp;IT_HelpDesk_L1_Grp;IT_HelpDesk_L2_Grp
+HR_All_Staff_Grp,HR,,,Global,Security,HR_Sensitive_Data_Grp;HR_General_Staff_Grp
+Sales_All_Staff_Grp,Sales,,,Global,Security,Sales_Managers_Grp;Sales_Staff_Grp
+All_Staff_DL,0,,,Global,Distribution,
+Management_DL,0,,,Global,Distribution,
+Department_Heads_DL,0,,,Global,Distribution,
+Global_Read_Grp,0,,Basic read access to company-wide resources,Global,Security,
+Confidential_Data_Grp,0,,Access to confidential company documents,Global,Security,
