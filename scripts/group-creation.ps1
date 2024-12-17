@@ -24,11 +24,11 @@ function CreateADGroupInOU {
         
         # Create new group
         $group = New-ADGroup -Name $GroupName `
-                            -Path $OUPath `
-                            -Description $Description `
-                            -GroupScope $Scope `
-                            -GroupCategory $Type `
-                            -PassThru
+            -Path $OUPath `
+            -Description $Description `
+            -GroupScope $Scope `
+            -GroupCategory $Type `
+            -PassThru
                             
         Write-Host "Successfully created group '$GroupName' in: $OUPath" -ForegroundColor Green
         return $group
@@ -48,7 +48,8 @@ function Add-GroupMemberships {
     
     try {
         foreach ($memberGroup in $MemberGroups) {
-            if ($memberGroup) {  # Only process if memberGroup is not empty
+            if ($memberGroup) {
+                # Only process if memberGroup is not empty
                 Add-ADGroupMember -Identity $GroupName -Members $memberGroup
                 Write-Host "Added '$memberGroup' as member of '$GroupName'" -ForegroundColor Green
             }
@@ -71,10 +72,10 @@ foreach ($group in $groups) {
     Write-Host "`nProcessing group: $($group.GroupName)" -ForegroundColor Cyan
     
     # Construct full OU path
-    if (-not ($group.OUName -eq "0")){
+    if (-not ($group.OUName -eq "0")) {
         $ouPath = "OU=$($group.OUName),OU=TechCorp,$domainDN"
     }
-    else{
+    else {
         $ouPath = "OU=TechCorp,$domainDN"
     }
     
@@ -83,10 +84,10 @@ foreach ($group in $groups) {
     }
     
     CreateADGroupInOU -GroupName $group.GroupName `
-                       -OUPath $ouPath `
-                       -Description $group.Description `
-                       -Scope $group.Scope `
-                       -Type $group.Type
+        -OUPath $ouPath `
+        -Description $group.Description `
+        -Scope $group.Scope `
+        -Type $group.Type
 }
 
 # Then, set up all group memberships

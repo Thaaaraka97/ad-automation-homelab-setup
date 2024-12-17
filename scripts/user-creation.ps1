@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory
 
 # Constant Domain Components
-$DomainDC = "OU=TechCorp,DC=techcorp,DC=local"
+$DomainDC = "OU=TechCorp,DC=domainname,DC=local"
 
 # Default password for all the users
 $Password = "P@ssw0rd@123"
