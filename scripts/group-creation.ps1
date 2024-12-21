@@ -64,7 +64,7 @@ function Add-GroupMemberships {
 $domainDN = (Get-ADDomain).DistinguishedName
 
 # Read the CSV file
-$csvPath = "ADGroups.csv"
+$csvPath = "groups.csv"
 $groups = Import-Csv $csvPath
 
 # First, create all groups
@@ -73,14 +73,14 @@ foreach ($group in $groups) {
     
     # Construct full OU path
     if (-not ($group.OUName -eq "0")) {
-        $ouPath = "OU=$($group.OUName),OU=TechCorp,$domainDN"
+        $ouPath = "OU=$($group.OUName),OU=domain-name,$domainDN"
     }
     else {
-        $ouPath = "OU=TechCorp,$domainDN"
+        $ouPath = "OU=domain-name,$domainDN"
     }
     
     if ($group.ParentOU) {
-        $ouPath = "OU=$($group.OUName),OU=$($group.ParentOU),OU=TechCorp,$domainDN"
+        $ouPath = "OU=$($group.OUName),OU=$($group.ParentOU),OU=domain-name,$domainDN"
     }
     
     CreateADGroupInOU -GroupName $group.GroupName `

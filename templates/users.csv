@@ -1,11 +1,11 @@
 FirstName,LastName,Username,Role,Department,OU,Email
-John,Smith,john.smith,CEO,Management,Management,john.smith@domainname.local
-Lisa,Brown,lisa.brown,CFO,Management,Management,lisa.brown@domainname.local
-James,Clark,james.clark,HelpDesk Admin,IT,IT\HelpDesk,james.clark@domainname.local
-Sarah,Green,sarah.green,HelpDesk Support,IT,IT\HelpDesk,sarah.green@domainname.local
-Mark,Johnson,mark.johnson,System Admin,IT,IT\Infrastructure,mark.johnson@domainname.local
-Emily,Davis,emily.davis,Network Engineer,IT,IT\Infrastructure,emily.davis@domainname.local
-Anna,White,anna.white,HR Manager,HR,HR,anna.white@domainname.local
-David,Miller,david.miller,HR Assistant,HR,HR,david.miller@domainname.local
-Steve,Adams,steve.adams,Sales Manager,Sales,Sales,steve.adams@domainname.local
-Rachel,Grey,rachel.grey,Sales Representative,Sales,Sales,rachel.grey@domainname.local
+John,Smith,john.smith,CEO,Management,Management,john.smith@domain-name.local
+Lisa,Brown,lisa.brown,CFO,Management,Management,lisa.brown@domain-name.local
+James,Clark,james.clark,HelpDesk Admin,IT,IT\HelpDesk,james.clark@domain-name.local
+Sarah,Green,sarah.green,HelpDesk Support,IT,IT\HelpDesk,sarah.green@domain-name.local
+Mark,Johnson,mark.johnson,System Admin,IT,IT\Infrastructure,mark.johnson@domain-name.local
+Emily,Davis,emily.davis,Network Engineer,IT,IT\Infrastructure,emily.davis@domain-name.local
+Anna,White,anna.white,HR Manager,HR,HR,anna.white@domain-name.local
+David,Miller,david.miller,HR Assistant,HR,HR,david.miller@domain-name.local
+Steve,Adams,steve.adams,Sales Manager,Sales,Sales,steve.adams@domain-name.local
+Rachel,Grey,rachel.grey,Sales Representative,Sales,Sales,rachel.grey@domain-name.local

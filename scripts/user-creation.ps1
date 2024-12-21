@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory
 
 # Constant Domain Components
-$DomainDC = "OU=TechCorp,DC=domainname,DC=local"
+$DomainDC = "OU=ou-name,DC=domain-name,DC=local"
 
 # Default password for all the users
 $Password = "P@ssw0rd@123"
@@ -37,7 +37,7 @@ $GroupMappings = @{
 }
 
 # Specify the path to your CSV file
-$CSVPath = "ADUsers.csv"
+$CSVPath = "users.csv"
 
 # Read the CSV file
 $Users = Import-Csv -Path $CSVPath

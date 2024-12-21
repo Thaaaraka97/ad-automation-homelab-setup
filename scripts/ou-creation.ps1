@@ -30,7 +30,7 @@ function CreateOrganizationalUnit {
 }
 
 # Read the CSV file
-$csvPath = "ADOUList.csv"
+$csvPath = "ous.csv"
 $ous = Import-Csv $csvPath
 
 # Sort OUs by path depth (number of backslashes) to ensure parent OUs are created first

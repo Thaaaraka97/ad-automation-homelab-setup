@@ -1,7 +1,7 @@
 Path,Description
-TechCorp\Management,Management department
-TechCorp\IT,IT department
-TechCorp\IT\HelpDesk,Helpdesk section of IT department
-TechCorp\IT\ITAdmin,IT Admin section of IT department
-TechCorp\HR,HR department
-TechCorp\Sales,Sales department
+domain-name\Management,Management department
+domain-name\IT,IT department
+domain-name\IT\HelpDesk,Helpdesk section of IT department
+domain-name\IT\ITAdmin,IT Admin section of IT department
+domain-name\HR,HR department
+domain-name\Sales,Sales department
